@@ -1,0 +1,3 @@
+Name = Neasher, Age = 23
+Name = Hriody, Age = 25
+Name = Ashik, Age = 56

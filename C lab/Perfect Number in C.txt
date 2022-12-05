@@ -1,0 +1,31 @@
+/* 
+Perfect number is a positive number which is equal to the sum of all its divisors excluding itself.
+For example:
+
+28 is a perfect number as 1 + 2 + 4 + 7 + 14 = 28.
+
+15 is not perfect number as 1 + 3 + 5 is not equal to 15.
+*/
+
+#include<stdio.h>
+ 
+int main(){
+	int num,j,s=0;
+	printf("Enter a number:");
+	scanf("%d",&num);
+	
+	for(j=1;j<num;++j){
+		if(num%j==0){
+			s=s+j;
+		}
+	}
+ 
+	if(s==num){
+		printf("Perfect Number");
+	}	
+	else{
+		printf("Not perfect number");
+	}
+	
+	return 0;
+}
